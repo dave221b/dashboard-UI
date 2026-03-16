@@ -33,6 +33,7 @@ async (error) => {
       originalRequest.headers.Authorization = `Bearer ${accessToken}`;
       return api(originalRequest);
     } catch (refreshError) {
+      console.error("Refresh token error:", refreshError);
       useAuthStore.getState().logout();
     }
   }
