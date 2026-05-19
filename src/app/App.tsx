@@ -1,8 +1,8 @@
+import AppRouter from "./AppRouter";
+
 const App = () => {
   return (
-    <div>
-      <h1>InsightHub</h1>
-    </div>
+    <AppRouter />
   );
 };
 
